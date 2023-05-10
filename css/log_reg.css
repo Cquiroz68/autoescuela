@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+:root{
+    --facebook:#3b5999;
+    --instagram:#e4405f;
+    --whatsapp:#57ec0d;
+    --letra:#FFEA00;
+    --fondo: #232323;
+    --tarjetas: #d9d9d9;
+    --fondo1: #fff;
+    --linfor: white thin solid
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--fondo1);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-form {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    transition:  all .5s ease-out;
+   
+}
+
+.welcome-back {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.message {
+    padding: 1rem;
+    color: var(--letra);
+}
+
+.message h2 {
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    color: var(--letra);
+}
+
+.message button {
+    padding: 1rem;
+    font-weight: 400;
+    background-color:var(--fondo);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: var(--letra);
+    
+}
+
+.message button:hover {
+    background-color: var(--letra);
+    color: var(--fondo);
+}
+
+.formulario {
+    width: 30vw;
+    padding: 1rem;
+    margin: 2rem;
+    background-color: var(--fondo);
+    text-align: center;
+    
+}
+
+.create-account {
+    padding: 2.7rem 0;
+    font-size: 1.7rem;
+    color: var(--letra);
+}
+
+.iconos {
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.border-icon {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border: var(--linfor);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+}
+
+.border-icon:hover {
+    background-color: var(--letra);
+    color: var(--fondo);
+    cursor: pointer;
+}
+
+.cuenta-gratis {
+    padding: 0.8em 0;
+    color:var(--letra)
+}
+
+.formulario input {
+    width: 70%;
+    display: block;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: var(--linfor);
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color: var(--fondo1);
+}
+
+.formulario input[type="button"] {
+    width: 60%;
+    margin: auto;
+    border: var(--linfor);
+    padding: .7rem;
+    border-radius: 2rem;
+    background-color: var(--fondo1);
+    font-weight: 600;
+    margin-top: 3rem;
+    font-size: .8rem;
+    cursor: pointer;
+    color: var(--fondo);
+}
+
+.sign-up-btn{
+    padding: 1rem;
+    font-weight: 400;
+    background-color:var(--fondo);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: var(--letra);
+}
+
+.sign-up-btn:hover {
+    background-color: var(--letra);
+    color: var(--fondo);
+}
+
+.sign-in {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.sign-in.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.sign-up.active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.btn-volver1{
+    display: block;
+    width: 8%;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    background: var(--letra);
+    color: var(--fondo);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+
+.btn-volver1:hover{
+    background: var(--fondo);
+    color: var(--letra);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.btn-regis{
+    width: 50%;
+    height: 8%;
+    background: var(--fondo);
+    color: var(--letra);
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.btn-regis:hover{
+    background: var(--letra);
+    color: var(--fondo);
+}
+
+
+
